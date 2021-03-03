@@ -19,15 +19,15 @@ The biomaterials annotator is a lexical resource for performing annotations on t
 13. [CHMO](https://bioportal.bioontology.org/ontologies/CHMO)
 
 ## Actual Version: 1.0.6, 2020-09-17
-## [Changelog](https://github.com/ProjectDebbie/Biomaterials_annotator/blob/master/CHANGELOG) 
+## [Changelog](https://github.com/ProjectDebbie/DEBBIE_dictionaries_annotations/blob/main/CHANGELOG) 
 
 ## Docker
 
-projectdebbie/biomaterials-annotator
+projectdebbie/debbie_dictionaries_annotations
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/ProjectDebbie/Biomaterials_annotator/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/ProjectDebbie/DEBBIE_dictionaries_annotations/tags). 
 
 ## Authors
 
