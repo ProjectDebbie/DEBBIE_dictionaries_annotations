@@ -36,7 +36,7 @@ mv nlp-gate-generic-component/target/nlp-gate-generic-component-0.0.1-SNAPSHOT-j
 
 cat > /usr/local/bin/biomaterials-annotator <<EOF
 #!/bin/sh
-exec java \$JAVA_OPTS -jar "${MEDICAL_MATERIALS_TAGGER_HOME}/nlp-gate-generic-component-${MEDICAL_MATERIALS_TAGGER_VERSION}.jar" -workdir "${MEDICAL_MATERIALS_TAGGER_HOME}" -l dictionaries/lists.def -j jape_rules/main.jape "\$@" 
+exec java \$JAVA_OPTS -jar "${MEDICAL_MATERIALS_TAGGER_HOME}/nlp-gate-generic-component-${MEDICAL_MATERIALS_TAGGER_VERSION}.jar" -workdir "${MEDICAL_MATERIALS_TAGGER_HOME}" -l dictionaries/lists.def,dictionaries/lists2.def -j jape_rules/main.jape "\$@" 
 EOF
 chmod +x /usr/local/bin/biomaterials-annotator
 

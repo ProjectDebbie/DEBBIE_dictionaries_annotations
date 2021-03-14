@@ -1,0 +1,32 @@
+Phase:entity_phase 
+Input: Token  
+//note that we are using Lookup and Token both inside our rules. 
+//todo regla no agregar cell si ya existe una mas grande
+Options: control = brill  
+Rule: cellrule  
+(  
+({Token.pos == "JJ"} | {Token.pos == "NN"}) {Token.root == "cell"} 
+) :cell_rule 
+-->  
+//:cell.Cell= {rule = "cellrule"}
+{
+	gate.AnnotationSet lookup = (gate.AnnotationSet) bindings.get("cell_rule");
+ 	gate.Annotation ann = (gate.Annotation) lookup.iterator().next();
+ 	gate.AnnotationSet  annotation_cells = outputAS.get("Cell", ann.getStartNode().getOffset(), ann.getEndNode().getOffset());
+ 	Boolean process = true;
+ 	for (Annotation c : annotation_cells) {
+ 		//if there is cell already annotated
+ 		System.out.println("Existe un anotacion de tipo Cell:  " + c);
+ 		process = false;
+ 		break;
+ 	}
+ 	if(process){
+ 		try{
+ 			gate.FeatureMap features = Factory.newFeatureMap();
+			features.put("rule", "cell_rule");
+			outputAS.add(lookup.firstNode().getOffset(),lookup.lastNode().getOffset(), "Cell", features);
+		}catch(InvalidOffsetException e){
+			throw new LuckyException(e);
+		}
+ 	}
+}

@@ -1,0 +1,19 @@
+Imports: {
+import static gate.Utils.*;
+}
+Phase:firstphase
+Input: Chemical AbbreviationCandidate
+Options: control = appelt
+
+Rule: delete_rule
+(
+({Chemical} | {AbbreviationCandidate})
+)
+:lookup
+-->
+{
+	gate.AnnotationSet lookup = (gate.AnnotationSet) bindings.get("lookup");
+ 	gate.Annotation ann = (gate.Annotation) lookup.iterator().next();
+ 	inputAS.remove(ann);
+	 
+}

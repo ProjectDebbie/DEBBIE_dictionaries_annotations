@@ -6,10 +6,11 @@ Input: Lookup
 Options: control = appelt
 Rule: debbie_priority
 (
-  {Lookup.minorType == "DEB_ONTOLOGY"} | {Lookup.minorType == "IOBC"} | {Lookup.minorType == "NCIT"} | {Lookup.minorType == "NPO"} | {Lookup.minorType == "UBERON"} | {Lookup.minorType == "PREMEDONTO"} | {Lookup.minorType == "CHEBI"} | {Lookup.minorType == "OBI"} | {Lookup.minorType == "ONTOTOX"} | {Lookup.minorType == "GMDN"} | {Lookup.minorType == "CHMO"}
+  {Lookup.minorType == "DEB_ONTOLOGY"}
 ) :debbie_ont
 -->
 {
+    //Example can be reviewed in 16289994, term polymers
     gate.AnnotationSet lookup = (gate.AnnotationSet) bindings.get("debbie_ont");
  	gate.Annotation ann = (gate.Annotation) lookup.iterator().next();
  	gate.AnnotationSet  to_remove = outputAS.get(ann.getStartNode().getOffset(), ann.getEndNode().getOffset());
@@ -17,12 +18,10 @@ Rule: debbie_priority
  		//remove only the stop word, this is for cases in where a stop word is inside a bigger term annotated
  		FeatureMap lookupFeatures = rem.getFeatures();
  	    Object source = lookupFeatures.get("SOURCE");
- 		if(source!=null && source.toString().equals("UMLS")){
- 		    if(ann.getStartNode().getOffset()<=rem.getStartNode().getOffset() && ann.getEndNode().getOffset()>=rem.getEndNode().getOffset()){
- 				System.out.println("REMOVE WORD : " + stringFor(doc, rem) + " from UMLS SOURCE. For : " + stringFor(doc, ann) + ", source : " + ann.getFeatures().get("minorType"));
+ 		if(source!=null && !source.toString().equals("DEB_ONTOLOGY")){
+ 		    if(ann.getStartNode().getOffset()==rem.getStartNode().getOffset() && ann.getEndNode().getOffset()==rem.getEndNode().getOffset()){
+ 				System.out.println("Remove annotation  " + stringFor(doc, rem) + " from " + source.toString() + " --- DEB_ONOTOLOGY priority");
  				outputAS.remove(rem);
- 			}else{
- 				System.out.println(" WILL NOT REMOVE WORD : " + stringFor(doc, rem) + " from UMLS SOURCE. The other word is : " + stringFor(doc, ann) + ", source : " + ann.getFeatures().get("minorType"));
  			}
  		}
  		

@@ -1,0 +1,114 @@
+Imports: {
+import static gate.Utils.*;
+import es.bsc.inb.nlp.gate.generic.component.util.ExtractAbbrev;
+import java.util.Map;
+}
+Phase:abbre_phase
+Input: Sentence
+Options: control = appelt
+
+Rule: abbreviations_rule
+(
+{Sentence}
+)
+:abbreviations_rule
+-->
+{
+	gate.AnnotationSet lookup = (gate.AnnotationSet) bindings.get("abbreviations_rule");
+ 	gate.Annotation ann = (gate.Annotation) lookup.iterator().next();
+ 	String sentence = stringFor(doc, ann);
+ 	gate.FeatureMap features = Factory.newFeatureMap();
+ 	//Map<String,String> map = ExtractAbbrev.mainAlternative(sentence);
+ 	ExtractAbbrev extract = new ExtractAbbrev();
+    java.util.regex.Matcher matcher = java.util.regex.Pattern.compile("(?:[a-z]*[A-Z][a-z]*){2,}").matcher(sentence);
+    Map<String,String> map = new HashMap<String,String>();
+    while (matcher.find()) {
+    	String candidate = matcher.group();
+    	String definition = extract.extractAbbrPair(candidate, sentence.substring(0,matcher.start()));
+    	
+    	definition = definition.strip();
+    	if(definition!=null && !definition.trim().equals("")){
+    		System.out.println(sentence);
+    		Long start_s = new Long(matcher.start());
+	    	Long end_s = new Long(matcher.end()); 
+	    	System.out.println(candidate + "---(" + start_s + "," + end_s + ") -- sentence");
+    		
+    		Long start = start_s + ann.getStartNode().getOffset();
+	    	Long end = end_s + ann.getStartNode().getOffset();
+    		
+    		System.out.println(candidate + "---(" + start + "," + end + ") -- global ");
+    		
+    		gate.AnnotationSet  candidate_abbre_annotations = outputAS.get(start, end);
+    		Boolean process = true;
+    		for (Annotation can_abbre_anno : candidate_abbre_annotations) {
+		    		if(!can_abbre_anno.getType().equals("Token") && !can_abbre_anno.getType().equals("Sentence") && 
+		    		can_abbre_anno.getStartNode().getOffset().equals(start) && can_abbre_anno.getEndNode().getOffset().equals(end)){
+    					System.out.println("The abbreviation is already annotated: " + candidate +   " --- " +  can_abbre_anno.getType());
+    					process = false;
+    				}	
+    		}
+    		
+    		//always print candidate 
+    		Long start_def_s = new Long(sentence.indexOf(definition));
+	      	Long end_def_s =-1l;
+	      	if(start_def_s!=-1) {
+	      	    end_def_s = start_def_s + definition.length();
+	      		Long start_def = start_def_s + ann.getStartNode().getOffset();
+	      		Long end_def = end_def_s + ann.getStartNode().getOffset();
+	      		System.out.println(definition + "---(" + start_def_s + "," + end_def_s + ") -- sentence");
+	      		System.out.println(definition + "---(" + start_def + "," + end_def + ") -- global");
+	      		try{
+			 	    features.put("Abbreviation_from", definition);
+					outputAS.add(start, end, "AbbreviationCandidate", features);
+					System.out.println("");
+				}catch(InvalidOffsetException e){
+					throw new LuckyException(e);
+				}
+			    	
+			   if(process){ 
+			   		gate.AnnotationSet  candidate_definition_annotations = outputAS.get(start_def, end_def);
+			    	for (Annotation def_anno : candidate_definition_annotations) {
+			    		if(!def_anno.getType().equals("Token") && !def_anno.getType().equals("Sentence")){
+				 			if(def_anno.getStartNode().getOffset().equals(start_def) && def_anno.getEndNode().getOffset().equals(end_def)){
+				 				//there is an existing entity of the definition of the abbreviation, so the full document is parsed and we add the entity of 
+				 				//the definition to all the abbreviations present in the document
+				 				gate.AnnotationSet tokens =outputAS.get("Token");
+								//System.out.println(tokens);
+				 				//gate.AnnotationSet tokens = outputAS.get("Token");
+				 				//System.out.println("tommoa");
+				 				//System.out.println(tokens);
+			    				for (Annotation tok : tokens) {
+			    					FeatureMap f = tok.getFeatures();
+						    		if(f.get("word")!=null && f.get("word").equals(candidate)){
+						    			System.out.println("Annotate abbreviation: " + candidate + " ---- " + def_anno.getType() + " --- definition: " + definition);	
+									 	try{
+									 		features.put("Abbreviation_from", definition);
+									 		features.put("abbreviation_processed", "true");
+											outputAS.add(tok.getStartNode().getOffset(), tok.getEndNode().getOffset(), def_anno.getType(), features);
+										}catch(InvalidOffsetException e){
+											throw new LuckyException(e);
+										}
+									}
+						    	}
+				 				
+				 				
+				 			
+				 			
+				 			}
+				 		}
+		 			}
+	
+			   			
+			   		
+	      			
+	      		}
+			}
+    	}
+    	
+    	
+    	
+    	
+    }
+ 		
+  	
+}
