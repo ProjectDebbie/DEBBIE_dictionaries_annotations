@@ -1,7 +1,11 @@
 MultiPhase: Main
 Phases:
 clean_short_words
+dictionaries_priority
 debbie_priority
 label_mapping
 stop_words
 delete_lookups
+cell_rule
+abbreviations_rule
+remove_test_annotations

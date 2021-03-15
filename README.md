@@ -1,4 +1,4 @@
-# Biomaterials annotator
+# DEBBIE dictionaries 
 
 The biomaterials annotator is a lexical resource for performing annotations on the biomaterials literature. It provides a schema for combining terms from mutiple ontologies and nomenclutures (listed below), a domain-specific stop-word list and priority rules for concept recognition in biomaterials abstracts using [GATE](https://gate.ac.uk/overview.html).   
 
@@ -40,6 +40,7 @@ This project is licensed under the GNU License - see the [LICENSE](LICENSE) file
 
 
 
-
+## Funding
+<img align="left" width="75" height="50" src="eu_emblem.png"> This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Sklodowska-Curie grant agreement No 751277
 		
 		
