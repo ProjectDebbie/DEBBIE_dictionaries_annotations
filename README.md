@@ -31,6 +31,11 @@ Internally, the DEBBIE_dictionaries_annotations component uses the generic nlp-g
 
 projectdebbie/debbie_dictionaries_annotations
 
+## Built With
+
+* [Docker](https://www.docker.com/) - Docker Containers
+* [Maven](https://maven.apache.org/) - Dependency Management
+
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/ProjectDebbie/DEBBIE_dictionaries_annotations/tags). 
@@ -39,12 +44,9 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 **Javier Corvi and Osnat Hakimi** 
 
-
 ## License
 
 This project is licensed under the GNU License - see the [LICENSE](LICENSE) file for details
-
-
 
 ## Funding
 <img align="left" width="75" height="50" src="eu_emblem.png"> This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Sklodowska-Curie grant agreement No 751277
