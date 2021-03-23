@@ -1,24 +1,25 @@
-# DEBBIE dictionaries 
+# DEBBIE dictionaries annotation
 
-The biomaterials annotator is a lexical resource for performing annotations on the biomaterials literature. It provides a schema for combining terms from mutiple ontologies and nomenclutures (listed below), a domain-specific stop-word list and priority rules for concept recognition in biomaterials abstracts using [GATE](https://gate.ac.uk/overview.html).   
+The DEBBIE dictionaries annotator is part of the Biomaterials Annotator system 
 
+The Biomaterials Annotator is a lexical resource for performing annotations on the biomaterials literature. The main project and the documentation of the Biomaterials Annotator is available at https://github.com/ProjectDebbie/Biomaterials_annotator.
 
-## Ontologies used for the annotations 
-1. [MESH (UMLS)](https://bioportal.bioontology.org/ontologies/MESH)
-2. [DEB](https://bioportal.bioontology.org/ontologies/DEB)
-3. [GMDN](https://www.gmdnagency.org/)
-4. [CHEBI](https://bioportal.bioontology.org/ontologies/CHEBI)
-5. [IOBC](https://bioportal.bioontology.org/ontologies/IOBC)
-6. [NCIT](https://bioportal.bioontology.org/ontologies/NCIT)
-7. [NPO](https://bioportal.bioontology.org/ontologies/NPO)
-8. [OBI](https://bioportal.bioontology.org/ontologies/OBI)
-9. [ONTOTOXNUC](https://bioportal.bioontology.org/ontologies/ONTOTOXNUC)
-10. [UBERON](https://bioportal.bioontology.org/ontologies/UBERON)
-11. [PREMEDONTO](https://bioportal.bioontology.org/ontologies/PREMEDONTO)
-12. [EDAM Bioimaging Ontology](https://bioportal.bioontology.org/ontologies/EDAM-BIOIMAGING)
-13. [CHMO](https://bioportal.bioontology.org/ontologies/CHMO)
+## Resources used for the DEBBIE dictionaries annotator 
 
-## Actual Version: 1.0.6, 2020-09-17
+1. [DEB](https://bioportal.bioontology.org/ontologies/DEB)
+2. [GMDN](https://www.gmdnagency.org/)
+3. [CHEBI](https://bioportal.bioontology.org/ontologies/CHEBI)
+4. [IOBC](https://bioportal.bioontology.org/ontologies/IOBC)
+5. [NCIT](https://bioportal.bioontology.org/ontologies/NCIT)
+6. [NPO](https://bioportal.bioontology.org/ontologies/NPO)
+7. [OBI](https://bioportal.bioontology.org/ontologies/OBI)
+8. [ONTOTOXNUC](https://bioportal.bioontology.org/ontologies/ONTOTOXNUC)
+9. [UBERON](https://bioportal.bioontology.org/ontologies/UBERON)
+10. [PREMEDONTO](https://bioportal.bioontology.org/ontologies/PREMEDONTO)
+11. [EDAM Bioimaging Ontology](https://bioportal.bioontology.org/ontologies/EDAM-BIOIMAGING)
+12. [CHMO](https://bioportal.bioontology.org/ontologies/CHMO)
+
+## Actual Version: 1.0.0, 2020-03-23
 ## [Changelog](https://github.com/ProjectDebbie/DEBBIE_dictionaries_annotations/blob/main/CHANGELOG) 
 
 ## Docker
@@ -31,7 +32,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-**Osnat Hakimi, Javi Corvi** 
+**Javi Corvi and Osnat Hakimi** 
 
 
 ## License
