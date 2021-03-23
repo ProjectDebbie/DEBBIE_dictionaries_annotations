@@ -20,6 +20,9 @@ For a more complete explanation please refer to the [Biomaterials Annotator](htt
 10. [PREMEDONTO](https://bioportal.bioontology.org/ontologies/PREMEDONTO)
 11. [EDAM Bioimaging Ontology](https://bioportal.bioontology.org/ontologies/EDAM-BIOIMAGING)
 12. [CHMO](https://bioportal.bioontology.org/ontologies/CHMO)
+ 
+
+Internally, the DEBBIE_dictionaries_annotations component uses the generic nlp-gate-generic-component https://gitlab.bsc.es/inb/text-mining/generic-tools/nlp-gate-generic-component. This library is a generic component that annotate text with parametrices GATE-formatted gazetters/dictionaries. In other words, the DEBBIE_dictionaries_annotations component is an instance of the nlp-gate-generic-component with the umls dictionaries relevant for the biomaterial domain. This component uses the flexible gazetter option of the nlp-gate-generic-component; the terms of the gazetter are annotated using the words present in the text and also using the words lemma (morphological root value).
 
 ## Actual Version: 1.0.0, 2021-03-23
 ## [Changelog](https://github.com/ProjectDebbie/DEBBIE_dictionaries_annotations/blob/main/CHANGELOG) 
