@@ -1,8 +1,10 @@
 # DEBBIE dictionaries annotation
 
-The DEBBIE dictionaries annotator is part of the Biomaterials Annotator system 
+The DEBBIE dictionaries annotator is part of the Biomaterials Annotator system; a lexical resource for performing annotations on the biomaterials literature. The main project and the documentation of the Biomaterials Annotator is available at https://github.com/ProjectDebbie/Biomaterials_annotator.
 
-The Biomaterials Annotator is a lexical resource for performing annotations on the biomaterials literature. The main project and the documentation of the Biomaterials Annotator is available at https://github.com/ProjectDebbie/Biomaterials_annotator.
+The DEBBIE dictionaries annotation detect relevant entities related to the biomaterials domain in the text based on several resources detailed below.
+
+For a more complete explanation please refer to the [Biomaterials Annotator] (https://github.com/ProjectDebbie/Biomaterials_annotator) main page. 
 
 ## Resources used for the DEBBIE dictionaries annotator 
 
