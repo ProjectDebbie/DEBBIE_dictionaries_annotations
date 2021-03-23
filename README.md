@@ -2,7 +2,7 @@
 
 The DEBBIE dictionaries annotator is part of the Biomaterials Annotator system; a lexical resource for performing annotations on the biomaterials literature. The main project and the documentation of the Biomaterials Annotator is available at https://github.com/ProjectDebbie/Biomaterials_annotator.
 
-The DEBBIE dictionaries annotation detect relevant entities related to the biomaterials domain in the text based on several resources detailed below.
+The DEBBIE dictionaries annotation detect relevant entities related to the biomaterials domain in the text based on several resources detailed below. Is also responsible to execution JAPE rules for post-processing functions, such as the removal of false positives and the addition of information to each annotation. In addition, JAPE rules were run to identify entities using lexical constraints and address the concept recognition of abbreviations.
 
 For a more complete explanation please refer to the [Biomaterials Annotator](https://github.com/ProjectDebbie/Biomaterials_annotator) main page. 
 
