@@ -21,7 +21,7 @@ For a more complete explanation please refer to the [Biomaterials Annotator] (ht
 11. [EDAM Bioimaging Ontology](https://bioportal.bioontology.org/ontologies/EDAM-BIOIMAGING)
 12. [CHMO](https://bioportal.bioontology.org/ontologies/CHMO)
 
-## Actual Version: 1.0.0, 2020-03-23
+## Actual Version: 1.0.0, 2021-03-23
 ## [Changelog](https://github.com/ProjectDebbie/DEBBIE_dictionaries_annotations/blob/main/CHANGELOG) 
 
 ## Docker
@@ -34,7 +34,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-**Javi Corvi and Osnat Hakimi** 
+**Javier Corvi and Osnat Hakimi** 
 
 
 ## License
