@@ -26,7 +26,7 @@ Rule: abbreviations_rule
     	String candidate = matcher.group();
     	String definition = extract.extractAbbrPair(candidate, sentence.substring(0,matcher.start()));
     	
-    	definition = definition.strip();
+    	definition = definition.trim();
     	if(definition!=null && !definition.trim().equals("")){
     		System.out.println(sentence);
     		Long start_s = new Long(matcher.start());
