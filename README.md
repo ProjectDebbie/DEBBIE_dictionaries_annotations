@@ -1,6 +1,6 @@
 # DEBBIE dictionaries annotation
 
-The DEBBIE dictionaries annotator is part of the Biomaterials Annotator system; a lexical resource for performing annotations on the biomaterials literature. The main project and the documentation of the Biomaterials Annotator is available at https://github.com/ProjectDebbie/Biomaterials_annotator.
+The DEBBIE dictionaries annotator is part of the Biomaterials Annotator system; a lexical resource for performing annotations on the biomaterials literature. Description of the Biomaterials Annotator full project and its documentation is available at https://github.com/ProjectDebbie/Biomaterials_annotator.
 
 The DEBBIE dictionaries annotation detect relevant entities related to the biomaterials domain in the text based on several resources detailed below. Is also responsible to execution JAPE rules for post-processing functions, such as the removal of false positives and the addition of information to each annotation. In addition, JAPE rules were run to identify entities using lexical constraints and address the concept recognition of abbreviations.
 
@@ -22,7 +22,7 @@ For a more complete explanation please refer to the [Biomaterials Annotator](htt
 12. [CHMO](https://bioportal.bioontology.org/ontologies/CHMO)
  
 
-Internally, the DEBBIE_dictionaries_annotations component uses the generic nlp-gate-generic-component https://gitlab.bsc.es/inb/text-mining/generic-tools/nlp-gate-generic-component. This library is a generic component that annotate text with parametrices GATE-formatted gazetters/dictionaries. In other words, the DEBBIE_dictionaries_annotations component is an instance of the nlp-gate-generic-component with the umls dictionaries relevant for the biomaterial domain. This component uses the flexible gazetter option of the nlp-gate-generic-component; the terms of the gazetter are annotated using the words present in the text and also using the words lemma (morphological root value).
+Internally, the DEBBIE_dictionaries_annotations component uses the nlp-gate-generic-component https://gitlab.bsc.es/inb/text-mining/generic-tools/nlp-gate-generic-component. This library is a generic component that annotate text with parametrices GATE-formatted gazetters/dictionaries. In other words, the DEBBIE_dictionaries_annotations component is an instance of the nlp-gate-generic-component with the umls dictionaries relevant for the biomaterial domain. This component uses the flexible gazetter option of the nlp-gate-generic-component; the terms of the gazetter are annotated using the words present in the text and also using the words lemma (morphological root value).
 
 ## Actual Version: 1.0.0, 2021-03-23
 ## [Changelog](https://github.com/ProjectDebbie/DEBBIE_dictionaries_annotations/blob/main/CHANGELOG) 
