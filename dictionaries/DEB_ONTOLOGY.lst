@@ -54,6 +54,7 @@ alginate	LABEL=Biomaterial	ID=DEB_ont.Alginate
 alignment	LABEL=ArchitecturalOrganization	ID=DEB_ont.Alignment
 aligned	LABEL=ArchitecturalOrganization	ID=DEB_ont.Alignment	PrefSynonym=alignment	
 alloy	LABEL=BiomaterialType	ID=DEB_ont.Alloy
+amphiphilic	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Amphiphilic
 aneurysm	LABEL=AdverseEffects	ID=DEB_ont.Aneurysm
 aneurysm formation	LABEL=AdverseEffects	ID=DEB_ont.AneurysmFormation
 angiogenesis	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.Angiogenesis
@@ -71,18 +72,22 @@ drug delivery	LABEL=MedicalApplication	ID=DEB_ont.DrugDelivery
 drugrelease	LABEL=MedicalApplication	ID=DEB_ont.DrugDelivery	PrefSynonym=drug delivery	
 antibiotics	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.Antibiotics
 antimycotics	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.Antimycotics
+archwire	LABEL=Structure	ID=DEB_ont.Archwire
+wire	LABEL=Structure	ID=DEB_ont.Wire
 arthroplasty	LABEL=MedicalApplication	ID=DEB_ont.Arthroplasty
 tissue reconstruction	LABEL=MedicalApplication	ID=DEB_ont.TissueReconstruction
 tissueaugmentation	LABEL=MedicalApplication	ID=DEB_ont.TissueReconstruction	PrefSynonym=tissue reconstruction	
 artificial conduits	LABEL=ManufacturedObject	ID=DEB_ont.ArtificialConduits
 a nerve guidance conduit	LABEL=ManufacturedObject	ID=DEB_ont.ArtificialConduits	PrefSynonym=artificial conduits	
 conduit	LABEL=ManufacturedObject	ID=DEB_ont.ArtificialConduits	PrefSynonym=artificial conduits	
+conduit	LABEL=ManufacturedObject	ID=DEB_ont.Conduit
 artificial ligament	LABEL=ManufacturedObject	ID=DEB_ont.ArtificialLigament
 artificial organs	LABEL=MedicalApplication	ID=DEB_ont.ArtificialOrgans
 axonal growth	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.AxonalGrowth
 cell proliferation	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellProliferation
 axonal regrowth	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.AxonalRegrowth
 BMP	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.BMP
+bead	LABEL=Structure	ID=DEB_ont.Bead
 beta glycerolphosphate	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.BetaGlycerolphosphate
 bi-layered	LABEL=ArchitecturalOrganization	ID=DEB_ont.Bi-layered
 bilayer	LABEL=ArchitecturalOrganization	ID=DEB_ont.Bilayer
@@ -91,6 +96,7 @@ bioactivity	LABEL=EffectOnBiologicalSystem	ID=DEB_ont.Bioactivity
 bioactive	LABEL=EffectOnBiologicalSystem	ID=deb_ont.bioactive	PrefSynonym=bioactivity	
 bioadhesive	LABEL=ManufacturedObject	ID=DEB_ont.Bioadhesive
 bioceramic	LABEL=BiomaterialType	ID=DEB_ont.Bioceramic
+ceramic	LABEL=BiomaterialType	ID=DEB_ont.Ceramic
 biocompatibility	LABEL=EffectOnBiologicalSystem	ID=DEB_ont.Biocompatibility
 biocompatible	LABEL=EffectOnBiologicalSystem	ID=deb_ont.biocompatible	PrefSynonym=biocompatibility	
 biocomposite	LABEL=BiomaterialType	ID=DEB_ont.Biocomposite
@@ -102,14 +108,21 @@ bioresorption	LABEL=DegradationFeatures	ID=DEB_ont.Biodegradability	PrefSynonym=
 biodegradable	LABEL=DegradationFeatures	ID=deb_ont.biodegradable	PrefSynonym=biodegradability	
 biofabrication	LABEL=MaterialProcessing	ID=DEB_ont.Biofabrication
 biofunctionalization	LABEL=MaterialProcessing	ID=DEB_ont.Biofunctionalization
+biofunctionalisation	LABEL=MaterialProcessing	ID=DEB_ont.Biofunctionalization	PrefSynonym=biofunctionalization	
 biofunctional	LABEL=MaterialProcessing	ID=deb_ont.biofunctional	PrefSynonym=biofunctionalization	
 functionalization	LABEL=MaterialProcessing	ID=DEB_ont.Functionalization
 funcionalized	LABEL=MaterialProcessing	ID=deb_ont.funcionalized	PrefSynonym=functionalization	
 biohybrid	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Biohybrid
 bioinertness	LABEL=EffectOnBiologicalSystem	ID=DEB_ont.Bioinertness
+bioink	LABEL=BiomaterialType	ID=DEB_ont.Bioink
 biomineralization	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.Biomineralization
 mineralized	LABEL=AssociatedBiologicalProcess	ID=deb_ont.mineralized	PrefSynonym=biomineralization	
+mineralization	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.Mineralization
 biopolymer	LABEL=BiomaterialType	ID=DEB_ont.Biopolymer
+polymer	LABEL=BiomaterialType	ID=DEB_ont.Polymer
+polymers	LABEL=BiomaterialType	ID=DEB_ont.Polymer	PrefSynonym=polymer	
+polymeric	LABEL=BiomaterialType	ID=DEB_ont.Polymer	PrefSynonym=polymer	
+polymeric	LABEL=BiomaterialType	ID=deb_ont.polymeric	PrefSynonym=polymer	
 biostimulatory	LABEL=EffectOnBiologicalSystem	ID=DEB_ont.Biostimulatory
 biphasic	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Biphasic
 blend	LABEL=BiomaterialType	ID=DEB_ont.Blend
@@ -122,7 +135,8 @@ adhesively bonded	LABEL=MaterialProcessing	ID=DEB_ont.Bonding	PrefSynonym=bondin
 bonded	LABEL=MaterialProcessing	ID=DEB_ont.Bonding	PrefSynonym=bonding	
 bone cement	LABEL=ManufacturedObject	ID=DEB_ont.BoneCement
 cement	LABEL=ManufacturedObject	ID=DEB_ont.Cement
-bone healing	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.BoneHealing
+bone healing	LABEL=EffectOnBiologicalSystem	ID=DEB_ont.BoneHealing
+healing	LABEL=EffectOnBiologicalSystem	ID=DEB_ont.Healing
 bone injury	LABEL=MedicalApplication	ID=DEB_ont.BoneInjury
 injury	LABEL=MedicalApplication	ID=DEB_ont.Injury
 bony ingrowth	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.BonyIngrowth
@@ -137,22 +151,31 @@ capsule	LABEL=Structure	ID=DEB_ont.Capsule
 cartilage autograft implantation system	LABEL=ManufacturedObject	ID=DEB_ont.CartilageAutograftImplantationSystem
 cartilage injury	LABEL=MedicalApplication	ID=DEB_ont.CartilageInjury
 casting	LABEL=MaterialProcessing	ID=DEB_ont.Casting
+cell activation	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellActivation
 cell adhesion	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellAdhesion
 cell attachment	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellAdhesion	PrefSynonym=cell adhesion	
 cell aggregation	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellAggregation
+cell alignment	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellAlignment
+cell carrier	LABEL=ManufacturedObject	ID=DEB_ont.CellCarrier
 cell colonization	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellColonization
 cell delivery	LABEL=MedicalApplication	ID=DEB_ont.CellDelivery
+cell detachment	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellDetachment
 cell encapsulation	LABEL=MedicalApplication	ID=DEB_ont.CellEncapsulation
 microencapsulated cells	LABEL=MedicalApplication	ID=DEB_ont.CellEncapsulation	PrefSynonym=cell encapsulation	
 encapsulation	LABEL=MedicalApplication	ID=DEB_ont.Encapsulation
+cell homing	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellHoming
 cell infiltration	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellInfiltration
 cell migration	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellMigration
 cell motility	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellMotility
 cell polarization	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellPolarization
+cell seeding	LABEL=ResearchTechnique	ID=DEB_ont.CellSeeding
+research technique	LABEL=ResearchTechnique	ID=DEB_ont.ResearchTechnique
 cell sheet	LABEL=ManufacturedObjectComponent	ID=DEB_ont.CellSheet
 cell signaling	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellSignaling
+cell survival	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellSurvival
 cell viability	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellViability
 cellular attachment	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellularAttachment
+cell attachment	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellularAttachment	PrefSynonym=cellular attachment	
 cellular differentiation	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellularDifferentiation
 cell differentiation	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellularDifferentiation	PrefSynonym=cellular differentiation	
 differentiation	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellularDifferentiation	PrefSynonym=cellular differentiation	
@@ -160,7 +183,6 @@ cellular infiltration	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellularInfil
 cell infiltration	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellularInfiltration	PrefSynonym=cellular infiltration	
 cellular spreading	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellularSpreading
 cell spreading	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CellularSpreading	PrefSynonym=cellular spreading	
-ceramic	LABEL=BiomaterialType	ID=DEB_ont.Ceramic
 chemical formula	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.ChemicalFormula
 chemical property	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.ChemicalProperty
 chemodrug delivery	LABEL=MedicalApplication	ID=DEB_ont.ChemodrugDelivery
@@ -174,10 +196,17 @@ chronic inflammatory changes	LABEL=AdverseEffects	ID=DEB_ont.ChronicInflammation
 circular	LABEL=Shape	ID=DEB_ont.Circular
 shape	LABEL=Shape	ID=DEB_ont.Shape
 clinical study	LABEL=StudyType	ID=DEB_ont.ClinicalStudy
+coacervation	LABEL=MaterialProcessing	ID=DEB_ont.Coacervation
 coat	LABEL=ManufacturedObjectComponent	ID=DEB_ont.Coat
 coaxial electrospinning	LABEL=MaterialProcessing	ID=DEB_ont.CoaxialElectrospinning
 electrospinning	LABEL=MaterialProcessing	ID=DEB_ont.Electrospinning
 electrospun	LABEL=MaterialProcessing	ID=deb_ont.electrospun	PrefSynonym=electrospinning	
+coil	LABEL=Structure	ID=DEB_ont.Coil
+cold atmospheric pressure plasma treatment	LABEL=MaterialProcessing	ID=DEB_ont.ColdAtmosphericPressurePlasmaTreatment
+(cap) treatment	LABEL=MaterialProcessing	ID=DEB_ont.ColdAtmosphericPressurePlasmaTreatment	PrefSynonym=cold atmospheric pressure plasma treatment	
+cap treatment	LABEL=MaterialProcessing	ID=DEB_ont.ColdAtmosphericPressurePlasmaTreatment	PrefSynonym=cold atmospheric pressure plasma treatment	
+plasma treatment	LABEL=MaterialProcessing	ID=DEB_ont.PlasmaTreatment
+plasma_treated	LABEL=MaterialProcessing	ID=deb_ont.plasma_treated	PrefSynonym=plasma treatment	
 collagen	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.Collagen
 collagen deposition	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CollagenDeposition
 collagen secretion	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.CollagenSecretion
@@ -186,8 +215,7 @@ colonic surgery	LABEL=MedicalApplication	ID=DEB_ont.ColonicSurgery
 comparative	LABEL=StudyType	ID=DEB_ont.Comparative
 complications	LABEL=AdverseEffects	ID=DEB_ont.Complications
 composite graft	LABEL=ManufacturedObject	ID=DEB_ont.CompositeGraft
-surgical implant	LABEL=ManufacturedObject	ID=DEB_ont.SurgicalImplant
-implant	LABEL=ManufacturedObject	ID=DEB_ont.SurgicalImplant	PrefSynonym=surgical implant	
+graft	LABEL=ManufacturedObject	ID=DEB_ont.Graft
 compressive modulus	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.CompressiveModulus
 compressive strength	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.CompressiveStrength
 computational	LABEL=StudyType	ID=DEB_ont.Computational
@@ -195,8 +223,12 @@ conditioning	LABEL=MaterialProcessing	ID=DEB_ont.Conditioning
 conditioned	LABEL=MaterialProcessing	ID=deb_ont.conditioned	PrefSynonym=conditioning	
 conductivity	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Conductivity
 conductive	LABEL=ManufacturedObjectFeatures	ID=deb_ont.conductive	PrefSynonym=conductivity	
+contact lenses	LABEL=ManufacturedObject	ID=DEB_ont.ContactLenses
+lenses	LABEL=ManufacturedObject	ID=DEB_ont.Lenses
 contaminated wound	LABEL=AdverseEffects	ID=DEB_ont.ContaminatedWound
 continuous suture	LABEL=ManufacturedObject	ID=DEB_ont.ContinuousSuture
+surgical implant	LABEL=ManufacturedObject	ID=DEB_ont.SurgicalImplant
+implant	LABEL=ManufacturedObject	ID=DEB_ont.SurgicalImplant	PrefSynonym=surgical implant	
 core	LABEL=ManufacturedObjectComponent	ID=DEB_ont.Core
 corrosion behavior	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.CorrosionBehavior
 corrosion	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.CorrosionBehavior	PrefSynonym=corrosion behavior	
@@ -225,6 +257,7 @@ decellularized	LABEL=MaterialProcessing	ID=deb_ont.decellularized	PrefSynonym=de
 decellularized extracellular matrix	LABEL=Biomaterial	ID=DEB_ont.DecellularizedExtracellularMatrix
 decm	LABEL=Biomaterial	ID=DEB_ont.DecellularizedExtracellularMatrix	PrefSynonym=decellularized extracellular matrix	
 decellularized matrix	LABEL=BiomaterialType	ID=DEB_ont.DecellularizedMatrix
+natural material	LABEL=BiomaterialType	ID=DEB_ont.NaturalMaterial
 deformation	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Deformation
 degradability	LABEL=DegradationFeatures	ID=DEB_ont.Degradability
 degradation	LABEL=DegradationFeatures	ID=DEB_ont.Degradability	PrefSynonym=degradability	
@@ -237,17 +270,22 @@ dendritic elastin like peptides	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.Den
 dendritic elps	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.DendriticElastinLikePeptides	PrefSynonym=dendritic elastin like peptides	
 density	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Density
 deposition	LABEL=MaterialProcessing	ID=DEB_ont.Deposition
+device	LABEL=ManufacturedObject	ID=DEB_ont.Device
 diameter	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Diameter
 digestive surgery	LABEL=MedicalApplication	ID=DEB_ont.DigestiveSurgery
 disk	LABEL=Structure	ID=DEB_ont.Disk
 distensibility	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Distensibility
 doping	LABEL=MaterialProcessing	ID=DEB_ont.Doping
+doxorubicin	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.Doxorubicin
 ductility	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Ductility
 EPTFE	LABEL=Biomaterial	ID=DEB_ont.EPTFE
 edema	LABEL=AdverseEffects	ID=DEB_ont.Edema
 oedema	LABEL=AdverseEffects	ID=DEB_ont.Edema	PrefSynonym=edema	
 elasticty	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Elasticty
 electrospraying	LABEL=MaterialProcessing	ID=DEB_ont.Electrospraying
+elemental analysis	LABEL=ResearchTechnique	ID=DEB_ont.ElementalAnalysis
+emulsion	LABEL=MaterialProcessing	ID=DEB_ont.Emulsion
+emulsion solvent evaporation technique	LABEL=MaterialProcessing	ID=DEB_ont.EmulsionSolventEvaporationTechnique
 endothelial differentiation	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.EndothelialDifferentiation
 endothelialization	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.Endothelialization
 engraftment	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.Engraftment
@@ -284,12 +322,15 @@ foreign body reaction	LABEL=AdverseEffects	ID=DEB_ont.ForeignBodyReaction
 foreign body response	LABEL=AdverseEffects	ID=DEB_ont.ForeignBodyResponse
 foreign body	LABEL=AdverseEffects	ID=DEB_ont.ForeignBodyResponse	PrefSynonym=foreign body response	
 formation of adhesions	LABEL=AdverseEffects	ID=DEB_ont.FormationOfAdhesions
+fourier transform infrared spectroscopy	LABEL=ResearchTechnique	ID=DEB_ont.FourierTransformInfraredSpectroscopy
 fragmentation	LABEL=DegradationFeatures	ID=DEB_ont.Fragmentation
 freeze drying	LABEL=MaterialProcessing	ID=DEB_ont.FreezeDrying
 freeze-dried	LABEL=MaterialProcessing	ID=DEB_ont.FreezeDrying	PrefSynonym=freeze drying	
 freeze-drying	LABEL=MaterialProcessing	ID=DEB_ont.FreezeDrying	PrefSynonym=freeze drying	
 GFOGER	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.GFOGER
+gelatin	LABEL=Biomaterial	ID=DEB_ont.Gelatin
 gelling	LABEL=MaterialProcessing	ID=DEB_ont.Gelling
+gene expression	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.GeneExpression
 geometry	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Geometry
 glass	LABEL=BiomaterialType	ID=DEB_ont.Glass
 glass-transition temperature	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Glass-transitionTemperature
@@ -302,6 +343,7 @@ grooved	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Groove	PrefSynonym=groove
 grooved	LABEL=ManufacturedObjectFeatures	ID=deb_ont.grooved	PrefSynonym=groove	
 growth substrate	LABEL=ManufacturedObject	ID=DEB_ont.GrowthSubstrate
 substrate	LABEL=ManufacturedObject	ID=DEB_ont.GrowthSubstrate	PrefSynonym=growth substrate	
+halofuginone	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.Halofuginone
 headache	LABEL=AdverseEffects	ID=DEB_ont.Headache
 heart valve	LABEL=ManufacturedObject	ID=DEB_ont.HeartValve
 valve	LABEL=ManufacturedObject	ID=DEB_ont.Valve
@@ -313,7 +355,6 @@ hepatobiliary surgery	LABEL=MedicalApplication	ID=DEB_ont.HepatobiliarySurgery
 hierarchical	LABEL=ArchitecturalOrganization	ID=DEB_ont.Hierarchical
 histological examination	LABEL=ResearchTechnique	ID=DEB_ont.HistologicalExamination
 histological evaluation	LABEL=ResearchTechnique	ID=DEB_ont.HistologicalExamination	PrefSynonym=histological examination	
-research technique	LABEL=ResearchTechnique	ID=DEB_ont.ResearchTechnique
 histomorphometry	LABEL=ResearchTechnique	ID=DEB_ont.Histomorphometry
 histomorphometric examination	LABEL=ResearchTechnique	ID=DEB_ont.Histomorphometry	PrefSynonym=histomorphometry	
 human derived matrix	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.HumanDerivedMatrix
@@ -325,6 +366,7 @@ hydrophilicity	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Hydrophilicity
 hydrophilic	LABEL=ManufacturedObjectFeatures	ID=deb_ont.hydrophilic	PrefSynonym=hydrophilicity	
 hydrophobicity	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Hydrophobicity
 hydrophobic	LABEL=ManufacturedObjectFeatures	ID=deb_ont.hydrophobic	PrefSynonym=hydrophobicity	
+hydrothermal treatment	LABEL=MaterialProcessing	ID=DEB_ont.HydrothermalTreatment
 hydroxyapatite	LABEL=Biomaterial	ID=DEB_ont.Hydroxyapatite
 ha	LABEL=Biomaterial	ID=DEB_ont.Hydroxyapatite	PrefSynonym=hydroxyapatite	
 hypospadias surgery	LABEL=MedicalApplication	ID=DEB_ont.HypospadiasSurgery
@@ -353,6 +395,8 @@ pore	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Pore
 interconnectivity	LABEL=ArchitecturalOrganization	ID=DEB_ont.Interconnectivity
 intraperitoneal onlay mesh	LABEL=MedicalApplication	ID=DEB_ont.IntraperitonealOnlayMesh
 ipom	LABEL=MedicalApplication	ID=DEB_ont.IntraperitonealOnlayMesh	PrefSynonym=intraperitoneal onlay mesh	
+ionic gelation	LABEL=MaterialProcessing	ID=DEB_ont.IonicGelation
+irradiation	LABEL=MaterialProcessing	ID=DEB_ont.Irradiation
 knitting	LABEL=MaterialProcessing	ID=DEB_ont.Knitting
 knitted	LABEL=MaterialProcessing	ID=deb_ont.knitted	PrefSynonym=knitting	
 laparoscopic intraperitoneal implantation	LABEL=MedicalApplication	ID=DEB_ont.LaparoscopicIntraperitonealImplantation
@@ -360,6 +404,7 @@ lattice	LABEL=Structure	ID=DEB_ont.Lattice
 layer	LABEL=ManufacturedObjectComponent	ID=DEB_ont.Layer
 layered	LABEL=ArchitecturalOrganization	ID=DEB_ont.Layered
 layered closure	LABEL=MedicalApplication	ID=DEB_ont.LayeredClosure
+leaching	LABEL=MaterialProcessing	ID=DEB_ont.Leaching
 life threatening complication	LABEL=AdverseEffects	ID=DEB_ont.LifeThreateningComplication
 lipoaspirate fat	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.LipoaspirateFat
 load to failure	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.LoadToFailure
@@ -388,12 +433,14 @@ ultimate strength	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.UltimateStrength
 maximum strain	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.MaximumStrain
 mechanical stability	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.MechanicalStability
 medical textile	LABEL=ManufacturedObject	ID=DEB_ont.MedicalTextile
+melt blending	LABEL=MaterialProcessing	ID=DEB_ont.MeltBlending
 membrane	LABEL=Structure	ID=DEB_ont.Membrane
 mesh	LABEL=Structure	ID=DEB_ont.Mesh
 mesoporosity	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Mesoporosity
 mesoporous	LABEL=ManufacturedObjectFeatures	ID=deb_ont.mesoporous	PrefSynonym=mesoporosity	
 metal	LABEL=BiomaterialType	ID=DEB_ont.Metal
 metallic	LABEL=BiomaterialType	ID=deb_ont.metallic	PrefSynonym=metal	
+micelle	LABEL=Structure	ID=DEB_ont.Micelle
 microbead	LABEL=Structure	ID=DEB_ont.Microbead
 microcarrier	LABEL=MedicalApplication	ID=DEB_ont.Microcarrier
 microcomputed tomography	LABEL=ResearchTechnique	ID=DEB_ont.MicrocomputedTomography
@@ -403,6 +450,8 @@ microfibre	LABEL=Structure	ID=DEB_ont.Microfibre
 microgel	LABEL=Structure	ID=DEB_ont.Microgel
 microgroove	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Microgroove
 microgrooved	LABEL=ManufacturedObjectFeatures	ID=deb_ont.microgrooved	PrefSynonym=microgroove	
+microneedles	LABEL=ManufacturedObject	ID=DEB_ont.Microneedles
+needles	LABEL=ManufacturedObject	ID=DEB_ont.Needles
 microparticle	LABEL=Structure	ID=DEB_ont.Microparticle
 particle	LABEL=Structure	ID=DEB_ont.Particle
 microporosity	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Microporosity
@@ -410,6 +459,7 @@ microporous	LABEL=ManufacturedObjectFeatures	ID=deb_ont.microporous	PrefSynonym=
 microsphere	LABEL=Structure	ID=DEB_ont.Microsphere
 microtexture	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Microtexture
 microtextured	LABEL=ManufacturedObjectFeatures	ID=deb_ont.microtextured	PrefSynonym=microtexture	
+microwave irradiation	LABEL=MaterialProcessing	ID=DEB_ont.MicrowaveIrradiation
 milling	LABEL=MaterialProcessing	ID=DEB_ont.Milling
 milled	LABEL=MaterialProcessing	ID=deb_ont.milled	PrefSynonym=milling	
 molar mass	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.MolarMass
@@ -422,9 +472,15 @@ polyfilament	LABEL=Structure	ID=DEB_ont.Polyfilament
 multilayer	LABEL=ArchitecturalOrganization	ID=DEB_ont.Multilayer
 multilayered	LABEL=ArchitecturalOrganization	ID=DEB_ont.Multilayered
 multilineage differentiation	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.MultilineageDifferentiation
+multilumen	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Multilumen
 myogenic differentiation	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.MyogenicDifferentiation
+nail	LABEL=ManufacturedObject	ID=DEB_ont.Nail
+nano indentation	LABEL=ResearchTechnique	ID=DEB_ont.NanoIndentation
+instrumented indentation testing	LABEL=ResearchTechnique	ID=DEB_ont.NanoIndentation	PrefSynonym=nano indentation	
+nano-indentation	LABEL=ResearchTechnique	ID=DEB_ont.NanoIndentation	PrefSynonym=nano indentation	
 nanobiocomposite	LABEL=BiomaterialType	ID=DEB_ont.Nanobiocomposite
 nanobioglass	LABEL=BiomaterialType	ID=DEB_ont.Nanobioglass
+nanocarrier	LABEL=ManufacturedObject	ID=DEB_ont.Nanocarrier
 nanocoating	LABEL=MaterialProcessing	ID=DEB_ont.Nanocoating
 nanocomposite	LABEL=Structure	ID=DEB_ont.Nanocomposite
 nanocrystal	LABEL=Structure	ID=DEB_ont.Nanocrystal
@@ -433,11 +489,15 @@ nanofiber	LABEL=Structure	ID=DEB_ont.Nanofiber
 nanofibre	LABEL=Structure	ID=DEB_ont.Nanofibre
 nanofibrous	LABEL=Structure	ID=deb_ont.nanofibrous	PrefSynonym=nanofibre	
 nanohydorxyapatite	LABEL=Biomaterial	ID=DEB_ont.Nanohydorxyapatite
-nanohydroxyapetite	LABEL=BiomaterialType	ID=DEB_ont.Nanohydroxyapetite
 nanoparticle	LABEL=Structure	ID=DEB_ont.Nanoparticle
+nps	LABEL=Structure	ID=DEB_ont.Nanoparticle	PrefSynonym=nanoparticle	
+nanopowder	LABEL=Structure	ID=DEB_ont.Nanopowder
+powder	LABEL=Structure	ID=DEB_ont.Powder
+powdered	LABEL=Structure	ID=deb_ont.powdered	PrefSynonym=powder	
 nanorod	LABEL=Shape	ID=DEB_ont.Nanorod
 rod	LABEL=Shape	ID=DEB_ont.Rod
 nanoroughness	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Nanoroughness
+roughness	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Roughness
 nanosphere	LABEL=Shape	ID=DEB_ont.Nanosphere
 sphere	LABEL=Shape	ID=DEB_ont.Sphere
 nanotopography	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Nanotopography
@@ -446,16 +506,18 @@ nanotube	LABEL=Structure	ID=DEB_ont.Nanotube
 nanotubular	LABEL=Shape	ID=DEB_ont.Nanotubular
 tubular	LABEL=Shape	ID=DEB_ont.Tubular
 nanowire	LABEL=Structure	ID=DEB_ont.Nanowire
-natural material	LABEL=BiomaterialType	ID=DEB_ont.NaturalMaterial
 necrosis	LABEL=AdverseEffects	ID=DEB_ont.Necrosis
 needled felt	LABEL=Structure	ID=DEB_ont.NeedledFelt
 neocollagenesis	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.Neocollagenesis
 neocollagenesis	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.Neocollagenesis	PrefSynonym=neocollagenesis	
 neotissue	LABEL=MedicalApplication	ID=DEB_ont.Neotissue
 neovascularization	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.Neovascularization
+neovasculogenesis	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.Neovascularization	PrefSynonym=neovascularization	
 vascularization	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.Vascularization
 vascularisation	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.Vascularization	PrefSynonym=vascularization	
 network	LABEL=Structure	ID=DEB_ont.Network
+neural probes	LABEL=ManufacturedObject	ID=DEB_ont.NeuralProbes
+probes	LABEL=ManufacturedObject	ID=DEB_ont.Probes
 neuronal regeneration	LABEL=MedicalApplication	ID=DEB_ont.NeuronalRegeneration
 regeneration	LABEL=MedicalApplication	ID=DEB_ont.Regeneration
 nodule formation	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.NoduleFormation
@@ -467,7 +529,11 @@ non-degradable	LABEL=DegradationFeatures	ID=DEB_ont.Nonabsorbable	PrefSynonym=no
 nondegradable	LABEL=DegradationFeatures	ID=DEB_ont.Nonabsorbable	PrefSynonym=nonabsorbable	
 permanent	LABEL=DegradationFeatures	ID=deb_ont.permanent	PrefSynonym=nonabsorbable	
 nosocomial infection	LABEL=AdverseEffects	ID=DEB_ont.NosocomialInfection
+nuclear magnetic resonance	LABEL=ResearchTechnique	ID=DEB_ont.NuclearMagneticResonance
+nylon	LABEL=BiomaterialType	ID=DEB_ont.Nylon
 opaque	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Opaque
+optical profilometry	LABEL=ResearchTechnique	ID=DEB_ont.OpticalProfilometry
+profilometry	LABEL=ResearchTechnique	ID=DEB_ont.Profilometry
 orientation	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Orientation
 oriented	LABEL=ArchitecturalOrganization	ID=DEB_ont.Oriented
 osseous alterations	LABEL=EffectOnBiologicalSystem	ID=DEB_ont.OsseousAlterations
@@ -484,6 +550,7 @@ osteoinductivity	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.Osteoinduction	Pre
 osteoinductive	LABEL=AssociatedBiologicalProcess	ID=deb_ont.osteoinductive	PrefSynonym=osteoinduction	
 osteointegration	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.Osteointegration
 PCL	LABEL=Biomaterial	ID=DEB_ont.PCL
+polycaprolactone	LABEL=Biomaterial	ID=DEB_ont.PCL	PrefSynonym=PCL	
 PDSII	LABEL=Biomaterial	ID=DEB_ont.PDSII
 polydioxanone	LABEL=Biomaterial	ID=DEB_ont.Polydioxanone
 pdo	LABEL=Biomaterial	ID=DEB_ont.Polydioxanone	PrefSynonym=polydioxanone	
@@ -494,12 +561,21 @@ polydioxanon	LABEL=Biomaterial	ID=DEB_ont.Polydioxanone	PrefSynonym=polydioxanon
 p-dioxanone	LABEL=Biomaterial	ID=DEB_ont.Polydioxanone	PrefSynonym=polydioxanone	
 poly(dioxanone)	LABEL=Biomaterial	ID=DEB_ont.Polydioxanone	PrefSynonym=polydioxanone	
 poly-dioxanone	LABEL=Biomaterial	ID=DEB_ont.Polydioxanone	PrefSynonym=polydioxanone	
+PEG	LABEL=Biomaterial	ID=DEB_ont.PEG
+polyethyleneglycol	LABEL=Biomaterial	ID=DEB_ont.PEG	PrefSynonym=PEG	
+poly(ethyleneglycol)	LABEL=Biomaterial	ID=DEB_ont.PEG	PrefSynonym=PEG	
 PLGA	LABEL=Biomaterial	ID=DEB_ont.PLGA
 poly d,l lactic co glycolic acid	LABEL=Biomaterial	ID=DEB_ont.PLGA	PrefSynonym=PLGA	
+poly(glycolide:lactide)	LABEL=Biomaterial	ID=DEB_ont.PLGA	PrefSynonym=PLGA	
+polylactide-co-glycolide	LABEL=Biomaterial	ID=DEB_ont.PLGA	PrefSynonym=PLGA	
+polylactic-co-glycolic acid	LABEL=Biomaterial	ID=DEB_ont.PLGA	PrefSynonym=PLGA	
 PLLA	LABEL=Biomaterial	ID=DEB_ont.PLLA
 poly-l-lactic-acid	LABEL=Biomaterial	ID=DEB_ont.PLLA	PrefSynonym=PLLA	
 poly-l-lactide	LABEL=Biomaterial	ID=DEB_ont.PLLA	PrefSynonym=PLLA	
 PMMA	LABEL=Biomaterial	ID=DEB_ont.PMMA
+p s-b- p4 v p	LABEL=Biomaterial	ID=DEB_ont.PS-b-P4VP
+polystyrene-block-poly(4-vinylpyridine)	LABEL=Biomaterial	ID=DEB_ont.PS-b-P4VP	PrefSynonym=p s-b- p4 v p	
+particulate leaching	LABEL=MaterialProcessing	ID=DEB_ont.ParticulateLeaching
 patch	LABEL=ManufacturedObject	ID=DEB_ont.Patch
 pellet	LABEL=Structure	ID=DEB_ont.Pellet
 pepsin treatment	LABEL=MaterialProcessing	ID=DEB_ont.PepsinTreatment
@@ -513,21 +589,40 @@ photocrosslinking	LABEL=MaterialProcessing	ID=DEB_ont.Photocrosslinking
 photocrosslinked	LABEL=MaterialProcessing	ID=deb_ont.photocrosslinked	PrefSynonym=photocrosslinking	
 photocurable	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Photocurable
 photocuring	LABEL=MaterialProcessing	ID=DEB_ont.Photocuring
+pickup impression	LABEL=ResearchTechnique	ID=DEB_ont.PickupImpression
+pick up impression technique	LABEL=ResearchTechnique	ID=DEB_ont.PickupImpression	PrefSynonym=pickup impression	
 pin	LABEL=ManufacturedObject	ID=DEB_ont.Pin
-plasma treatment	LABEL=MaterialProcessing	ID=DEB_ont.PlasmaTreatment
-plasma_treated	LABEL=MaterialProcessing	ID=deb_ont.plasma_treated	PrefSynonym=plasma treatment	
+plasma activated chemical vapor deposition	LABEL=MaterialProcessing	ID=DEB_ont.PlasmaActivatedChemicalVaporDeposition
+pacvd	LABEL=MaterialProcessing	ID=DEB_ont.PlasmaActivatedChemicalVaporDeposition	PrefSynonym=plasma activated chemical vapor deposition	
 platelet derived growth factor	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.PlateletDerivedGrowthFactor
 pdgf	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.PlateletDerivedGrowthFactor	PrefSynonym=platelet derived growth factor	
 platelet rich plasma	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.PlateletRichPlasma
 prp	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.PlateletRichPlasma	PrefSynonym=platelet rich plasma	
+platelet-rich plasma	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.PlateletRichPlasma	PrefSynonym=platelet rich plasma	
 polishing	LABEL=MaterialProcessing	ID=DEB_ont.Polishing
 polished	LABEL=MaterialProcessing	ID=deb_ont.polished	PrefSynonym=polishing	
 poly-p-dioxanone	LABEL=Biomaterial	ID=DEB_ont.Poly-p-dioxanone
 ppdo	LABEL=Biomaterial	ID=DEB_ont.Poly-p-dioxanone	PrefSynonym=poly-p-dioxanone	
+poly citric acid	LABEL=Biomaterial	ID=DEB_ont.PolyCitricAcid
+poly(citric acid)	LABEL=Biomaterial	ID=DEB_ont.PolyCitricAcid	PrefSynonym=poly citric acid	
+poly glycerol sebacate	LABEL=Biomaterial	ID=DEB_ont.PolyGlycerolSebacate
+pgs	LABEL=Biomaterial	ID=DEB_ont.PolyGlycerolSebacate	PrefSynonym=poly glycerol sebacate	
+poly l phenylalanine	LABEL=Biomaterial	ID=DEB_ont.PolyLPhenylalanine
+poly l phenylalanine	LABEL=Biomaterial	ID=DEB_ont.PolyLPhenylalanine	PrefSynonym=poly l phenylalanine	
+pphe	LABEL=Biomaterial	ID=DEB_ont.PolyLPhenylalanine	PrefSynonym=poly l phenylalanine	
+poly trimethylene carbonate	LABEL=Biomaterial	ID=DEB_ont.PolyTrimethyleneCarbonate
+ptmc	LABEL=Biomaterial	ID=DEB_ont.PolyTrimethyleneCarbonate	PrefSynonym=poly trimethylene carbonate	
+polyalpha hydroxy acid	LABEL=BiomaterialType	ID=DEB_ont.PolyalphaHydroxyAcid
+pha	LABEL=BiomaterialType	ID=DEB_ont.PolyalphaHydroxyAcid	PrefSynonym=polyalpha hydroxy acid	
+synethtic polymer	LABEL=BiomaterialType	ID=DEB_ont.SynethticPolymer
+polydopamine	LABEL=Biomaterial	ID=DEB_ont.Polydopamine
+polyetherurethane	LABEL=Biomaterial	ID=DEB_ont.Polyetherurethane
+peu	LABEL=Biomaterial	ID=DEB_ont.Polyetherurethane	PrefSynonym=polyetherurethane	
 polyethylene terephthalate	LABEL=Biomaterial	ID=DEB_ont.PolyethyleneTerephthalate
 dacron	LABEL=Biomaterial	ID=DEB_ont.PolyethyleneTerephthalate	PrefSynonym=polyethylene terephthalate	
-polyethyleneglycol	LABEL=Biomaterial	ID=DEB_ont.Polyethyleneglycol
-peg	LABEL=Biomaterial	ID=DEB_ont.Polyethyleneglycol	PrefSynonym=polyethyleneglycol	
+mersilene	LABEL=Biomaterial	ID=DEB_ont.PolyethyleneTerephthalate	PrefSynonym=polyethylene terephthalate	
+polyethylenimine	LABEL=Biomaterial	ID=DEB_ont.Polyethylenimine
+pei	LABEL=Biomaterial	ID=DEB_ont.Polyethylenimine	PrefSynonym=polyethylenimine	
 polyglactin910	LABEL=Biomaterial	ID=DEB_ont.Polyglactin910
 pg910	LABEL=Biomaterial	ID=DEB_ont.Polyglactin910	PrefSynonym=polyglactin910	
 polyglycolic acid	LABEL=Biomaterial	ID=DEB_ont.PolyglycolicAcid
@@ -535,23 +630,24 @@ dexon	LABEL=Biomaterial	ID=DEB_ont.PolyglycolicAcid	PrefSynonym=polyglycolic aci
 pga	LABEL=Biomaterial	ID=DEB_ont.PolyglycolicAcid	PrefSynonym=polyglycolic acid	
 polylacticacid	LABEL=Biomaterial	ID=DEB_ont.Polylacticacid
 pla	LABEL=Biomaterial	ID=DEB_ont.Polylacticacid	PrefSynonym=polylacticacid	
+poly l lactide	LABEL=Biomaterial	ID=DEB_ont.Polylacticacid	PrefSynonym=polylacticacid	
 poly lactic acid	LABEL=Biomaterial	ID=DEB_ont.Polylacticacid	PrefSynonym=polylacticacid	
 poly(d,l-lactic acid)	LABEL=Biomaterial	ID=DEB_ont.Polylacticacid	PrefSynonym=polylacticacid	
 polylevolactide	LABEL=Biomaterial	ID=DEB_ont.Polylevolactide
 polylysine	LABEL=Biomaterial	ID=DEB_ont.Polylysine
-polymer	LABEL=BiomaterialType	ID=DEB_ont.Polymer
-polymers	LABEL=BiomaterialType	ID=DEB_ont.Polymer	PrefSynonym=polymer	
-polymeric	LABEL=BiomaterialType	ID=DEB_ont.Polymer	PrefSynonym=polymer	
-polymeric	LABEL=BiomaterialType	ID=deb_ont.polymeric	PrefSynonym=polymer	
+poly l lysine	LABEL=Biomaterial	ID=DEB_ont.Polylysine	PrefSynonym=polylysine	
+plys	LABEL=Biomaterial	ID=DEB_ont.Polylysine	PrefSynonym=polylysine	
 polymerization	LABEL=MaterialProcessing	ID=DEB_ont.Polymerization
 polymerized	LABEL=MaterialProcessing	ID=deb_ont.polymerized	PrefSynonym=polymerization	
+polyoxalate	LABEL=Biomaterial	ID=DEB_ont.Polyoxalate
 polytetrafluoroethylene	LABEL=Biomaterial	ID=DEB_ont.Polytetrafluoroethylene
 ptfe	LABEL=Biomaterial	ID=DEB_ont.Polytetrafluoroethylene	PrefSynonym=polytetrafluoroethylene	
 teflon	LABEL=Biomaterial	ID=DEB_ont.Polytetrafluoroethylene	PrefSynonym=polytetrafluoroethylene	
+polyvinylidene fluoride	LABEL=Biomaterial	ID=DEB_ont.PolyvinylideneFluoride
+pvdf	LABEL=Biomaterial	ID=DEB_ont.PolyvinylideneFluoride	PrefSynonym=polyvinylidene fluoride	
+polyvinylidene difluoride	LABEL=Biomaterial	ID=DEB_ont.PolyvinylideneFluoride	PrefSynonym=polyvinylidene fluoride	
 pore size	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.PoreSize
 postoperative adhesion	LABEL=AdverseEffects	ID=DEB_ont.PostoperativeAdhesion
-powder	LABEL=Structure	ID=DEB_ont.Powder
-powdered	LABEL=Structure	ID=deb_ont.powdered	PrefSynonym=powder	
 pre clinical study	LABEL=StudyType	ID=DEB_ont.PreClinicalStudy
 precoating	LABEL=MaterialProcessing	ID=DEB_ont.Precoating
 precoated	LABEL=MaterialProcessing	ID=deb_ont.precoated	PrefSynonym=precoating	
@@ -564,9 +660,12 @@ prospective multi center trial	LABEL=StudyType	ID=DEB_ont.ProspectiveMultiCenter
 prosthetic patch	LABEL=ManufacturedObject	ID=DEB_ont.ProstheticPatch
 pull out strength	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.PullOutStrength
 purification	LABEL=MaterialProcessing	ID=DEB_ont.Purification
+quartz crystal microbalance technique	LABEL=ResearchTechnique	ID=DEB_ont.QuartzCrystalMicrobalanceTechnique
+quartz crystal microbalance	LABEL=ResearchTechnique	ID=DEB_ont.QuartzCrystalMicrobalanceTechnique	PrefSynonym=quartz crystal microbalance technique	
 RGD	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.RGD
 radial compressive strength	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.RadialCompressiveStrength
 radial compression strength	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.RadialCompressiveStrength	PrefSynonym=radial compressive strength	
+rapid prototyping	LABEL=MaterialProcessing	ID=DEB_ont.RapidPrototyping
 re-endothelization	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.Re-endothelization
 recoarctation	LABEL=AdverseEffects	ID=DEB_ont.Recoarctation
 recombinant human bone morphogenetic protein	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.RecombinantHumanBoneMorphogeneticProtein
@@ -577,6 +676,7 @@ reinforcement	LABEL=MaterialProcessing	ID=DEB_ont.Reinforcement
 reinforced	LABEL=MaterialProcessing	ID=deb_ont.reinforced	PrefSynonym=reinforcement	
 reinnervation	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.Reinnervation
 re-innervation	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.Reinnervation	PrefSynonym=reinnervation	
+repair	LABEL=EffectOnBiologicalSystem	ID=DEB_ont.Repair
 repair of skull	LABEL=MedicalApplication	ID=DEB_ont.RepairOfSkull
 resorption	LABEL=DegradationFeatures	ID=DEB_ont.Resorption
 resorbable	LABEL=DegradationFeatures	ID=deb_ont.resorbable	PrefSynonym=resorption	
@@ -587,6 +687,7 @@ retrospective analysis	LABEL=StudyType	ID=DEB_ont.RetrospectiveAnalysis
 retrospective study	LABEL=StudyType	ID=DEB_ont.RetrospectiveStudy
 revascularization	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.Revascularization
 ring	LABEL=Shape	ID=DEB_ont.Ring
+ring opening polymerization	LABEL=MaterialProcessing	ID=DEB_ont.RingOpeningPolymerization
 roughening	LABEL=MaterialProcessing	ID=DEB_ont.Roughening
 roughened	LABEL=MaterialProcessing	ID=deb_ont.roughened	PrefSynonym=roughening	
 salt leaching	LABEL=MaterialProcessing	ID=DEB_ont.SaltLeaching
@@ -599,6 +700,7 @@ screw	LABEL=ManufacturedObject	ID=DEB_ont.Screw
 secondary infection	LABEL=AdverseEffects	ID=DEB_ont.SecondaryInfection
 self assembling	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.SelfAssembling
 self-assembling	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.SelfAssembling	PrefSynonym=self assembling	
+self expanding	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.SelfExpanding
 semipermeablity	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Semipermeablity
 semi-permeable	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Semipermeablity	PrefSynonym=semipermeablity	
 semipermeable	LABEL=ManufacturedObjectFeatures	ID=deb_ont.semipermeable	PrefSynonym=semipermeablity	
@@ -610,6 +712,7 @@ si r n a	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.SiRNA
 siderophore	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.Siderophore
 sintering	LABEL=MaterialProcessing	ID=DEB_ont.Sintering
 sintered	LABEL=MaterialProcessing	ID=deb_ont.sintered	PrefSynonym=sintering	
+sirolimus	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.Sirolimus
 size	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Size
 skin closure	LABEL=MedicalApplication	ID=DEB_ont.SkinClosure
 skin irritation	LABEL=AdverseEffects	ID=DEB_ont.SkinIrritation
@@ -623,36 +726,49 @@ spidroin	LABEL=Biomaterial	ID=DEB_ont.Spidroin
 spiral	LABEL=Shape	ID=DEB_ont.Spiral
 sponge	LABEL=Structure	ID=DEB_ont.Sponge
 spongy	LABEL=Structure	ID=deb_ont.spongy	PrefSynonym=sponge	
+spray drying	LABEL=MaterialProcessing	ID=DEB_ont.SprayDrying
+spray-drying	LABEL=MaterialProcessing	ID=DEB_ont.SprayDrying	PrefSynonym=spray drying	
 spring	LABEL=Shape	ID=DEB_ont.Spring
 sputtering	LABEL=MaterialProcessing	ID=DEB_ont.Sputtering
 stent insertion	LABEL=MedicalApplication	ID=DEB_ont.StentInsertion
 stiffness	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Stiffness
 surface functionalization	LABEL=MaterialProcessing	ID=DEB_ont.SurfaceFunctionalization
 surface hydrophilicity	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.SurfaceHydrophilicity
+surface modification	LABEL=MaterialProcessing	ID=DEB_ont.SurfaceModification
 surface roughness	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.SurfaceRoughness
 surface topography	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.SurfaceTopography
 surgical repair	LABEL=MedicalApplication	ID=DEB_ont.SurgicalRepair
 suture	LABEL=ManufacturedObject	ID=DEB_ont.Suture
-synethtic polymer	LABEL=BiomaterialType	ID=DEB_ont.SynethticPolymer
 synthetic material	LABEL=BiomaterialType	ID=DEB_ont.SyntheticMaterial
 tendon healing	LABEL=MedicalApplication	ID=DEB_ont.TendonHealing
 tenogenic differentiation	LABEL=AssociatedBiologicalProcess	ID=DEB_ont.TenogenicDifferentiation
 tensile strength	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.TensileStrength
 mechanical strength	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.TensileStrength	PrefSynonym=tensile strength	
 textile	LABEL=Structure	ID=DEB_ont.Textile
+theophylline	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.Theophylline
 thermal behaviour	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.ThermalBehaviour
 thermal decomposition temperature	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.ThermalDecompositionTemperature
 thermally induced phase separation	LABEL=MaterialProcessing	ID=DEB_ont.ThermallyInducedPhaseSeparation
 thermocycling	LABEL=MaterialProcessing	ID=DEB_ont.Thermocycling
 thermogel	LABEL=Structure	ID=DEB_ont.Thermogel
+thermosensitive	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Thermosensitive
 thickness	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Thickness
 thin film	LABEL=Structure	ID=DEB_ont.ThinFilm
 thread	LABEL=Structure	ID=DEB_ont.Thread
 ti-6 al-4 v	LABEL=Biomaterial	ID=DEB_ont.Ti-6Al-4V
+ti o2	LABEL=Biomaterial	ID=DEB_ont.TiO2
+titania	LABEL=Biomaterial	ID=DEB_ont.TiO2	PrefSynonym=ti o2	
+titanium dioxide	LABEL=Biomaterial	ID=DEB_ont.TiO2	PrefSynonym=ti o2	
+titanium(iv) oxide	LABEL=Biomaterial	ID=DEB_ont.TiO2	PrefSynonym=ti o2	
 tissue engineering	LABEL=MedicalApplication	ID=DEB_ont.TissueEngineering
 tissue integration	LABEL=EffectOnBiologicalSystem	ID=DEB_ont.TissueIntegration
 tissue regeneration	LABEL=MedicalApplication	ID=DEB_ont.TissueRegeneration
 titanium	LABEL=Biomaterial	ID=DEB_ont.Titanium
+ti	LABEL=Biomaterial	ID=DEB_ont.Titanium	PrefSynonym=titanium	
+titanium aluminium nitride	LABEL=Biomaterial	ID=DEB_ont.TitaniumAluminiumNitride
+tialn	LABEL=Biomaterial	ID=DEB_ont.TitaniumAluminiumNitride	PrefSynonym=titanium aluminium nitride	
+titaniumcarboxonitride	LABEL=Biomaterial	ID=DEB_ont.Titaniumcarboxonitride
+[ti(c,n,o)]	LABEL=Biomaterial	ID=DEB_ont.Titaniumcarboxonitride	PrefSynonym=titaniumcarboxonitride	
 topology	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Topology
 toughness	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Toughness
 toxicity	LABEL=AdverseEffects	ID=DEB_ont.Toxicity
@@ -662,6 +778,7 @@ transparancy	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Transparent	PrefSynonym
 tripolymer	LABEL=BiomaterialType	ID=DEB_ont.Tripolymer
 tube	LABEL=Structure	ID=DEB_ont.Tube
 tubes	LABEL=Structure	ID=DEB_ont.Tube	PrefSynonym=tube	
+tumor formation	LABEL=AdverseEffects	ID=DEB_ont.TumorFormation
 two-layered closure	LABEL=MedicalApplication	ID=DEB_ont.Two-layeredClosure
 type i collagen	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.TypeICollagen
 collagen (type i)	LABEL=BiologicallyActiveSubstance	ID=DEB_ont.TypeICollagen	PrefSynonym=type i collagen	
@@ -669,11 +786,12 @@ ultimate tensile strength	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.UltimateTe
 unidirectional	LABEL=ArchitecturalOrganization	ID=DEB_ont.Unidirectional
 vocal fold augmentation	LABEL=MedicalApplication	ID=DEB_ont.VocalFoldAugmentation
 water contact angle	LABEL=ResearchTechnique	ID=DEB_ont.WaterContactAngle
+water in oil in water double emulsion	LABEL=MaterialProcessing	ID=DEB_ont.WaterInOilInWaterDoubleEmulsion
+water-in-oil-in-waterdouble-emulsion	LABEL=MaterialProcessing	ID=DEB_ont.WaterInOilInWaterDoubleEmulsion	PrefSynonym=water in oil in water double emulsion	
 wear resistace	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.WearResistace
 weaving	LABEL=MaterialProcessing	ID=DEB_ont.Weaving
 woven	LABEL=MaterialProcessing	ID=deb_ont.woven	PrefSynonym=weaving	
 wettability	LABEL=ManufacturedObjectFeatures	ID=DEB_ont.Wettability
-wire	LABEL=Structure	ID=DEB_ont.Wire
 wound abscesses	LABEL=AdverseEffects	ID=DEB_ont.WoundAbscesses
 wound dressing	LABEL=ManufacturedObject	ID=DEB_ont.WoundDressing
 wound repair	LABEL=MedicalApplication	ID=DEB_ont.WoundRepair
@@ -689,10 +807,22 @@ osteogenicity	LABEL=EffectOnBiologicalSystem	ID=DEB_ont.osteogenicity
 3 d printing	LABEL=MaterialProcessing	ID=DEB_ont.3DPrinting
 three dimensional printing	LABEL=MaterialProcessing	ID=DEB_ont.3DPrinting	PrefSynonym=3 d printing	
 3d_printed	LABEL=MaterialProcessing	ID=deb_ont.3d_printed	PrefSynonym=3 d printing	
+poly(2-hydroxyethyl methacrylate)	LABEL=Biomaterial	ID=DEB_ont.Poly(2-hydroxyethylMethacrylate)
+polyhydroxyethylmethacrylate	LABEL=Biomaterial	ID=DEB_ont.Poly(2-hydroxyethylMethacrylate)	PrefSynonym=poly(2-hydroxyethyl methacrylate)	
+phema	LABEL=Biomaterial	ID=DEB_ont.Poly(2-hydroxyethylMethacrylate)	PrefSynonym=poly(2-hydroxyethyl methacrylate)	
+poly( n-(2- hydroxypropyl)methacrylamide)	LABEL=Biomaterial	ID=DEB_ont.Poly(N-(2-Hydroxypropyl)methacrylamide)
+poly(hpma)	LABEL=Biomaterial	ID=DEB_ont.Poly(N-(2-Hydroxypropyl)methacrylamide)	PrefSynonym=poly( n-(2- hydroxypropyl)methacrylamide)	
+phpma	LABEL=Biomaterial	ID=DEB_ont.Poly(N-(2-Hydroxypropyl)methacrylamide)	PrefSynonym=poly( n-(2- hydroxypropyl)methacrylamide)	
+poly( n-acryloyl_glycinamide)	LABEL=Biomaterial	ID=DEB_ont.Poly(N-acryloyl_glycinamide)
+pnaga	LABEL=Biomaterial	ID=DEB_ont.Poly(N-acryloyl_glycinamide)	PrefSynonym=poly( n-acryloyl_glycinamide)	
+poly( n-isopropylacrylamide)	LABEL=Biomaterial	ID=DEB_ont.Poly(N-isopropylacrylamide)
+pnipa	LABEL=Biomaterial	ID=DEB_ont.Poly(N-isopropylacrylamide)	PrefSynonym=poly( n-isopropylacrylamide)	
+pnipam	LABEL=Biomaterial	ID=DEB_ont.Poly(N-isopropylacrylamide)	PrefSynonym=poly( n-isopropylacrylamide)	
+poly(ethylene-vinyl_acetate)	LABEL=Biomaterial	ID=DEB_ont.Poly(ethylene-vinyl_acetate)
+ethylene-vinyl acetate	LABEL=Biomaterial	ID=DEB_ont.Poly(ethylene-vinyl_acetate)	PrefSynonym=poly(ethylene-vinyl_acetate)	
+peva	LABEL=Biomaterial	ID=DEB_ont.Poly(ethylene-vinyl_acetate)	PrefSynonym=poly(ethylene-vinyl_acetate)	
 poly(glycolide-co-epsilon-caprolactone)	LABEL=Biomaterial	ID=DEB_ont.Poly(glycolide-co-epsilon-caprolactone)
 pgacl	LABEL=Biomaterial	ID=DEB_ont.Poly(glycolide-co-epsilon-caprolactone)	PrefSynonym=poly(glycolide-co-epsilon-caprolactone)	
-poly(glycolide:lactide)	LABEL=Biomaterial	ID=DEB_ont.Poly(glycolide:lactide)
-plga	LABEL=Biomaterial	ID=DEB_ont.Poly(glycolide:lactide)	PrefSynonym=poly(glycolide:lactide)	
 poly(vinyl_alcohol)	LABEL=Biomaterial	ID=DEB_ont.Poly(vinyl_alcohol)
 pva	LABEL=Biomaterial	ID=DEB_ont.Poly(vinyl_alcohol)	PrefSynonym=poly(vinyl_alcohol)	
 poly vinyl alcohol	LABEL=Biomaterial	ID=DEB_ont.Poly(vinyl_alcohol)	PrefSynonym=poly(vinyl_alcohol)	
